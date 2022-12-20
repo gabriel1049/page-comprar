@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./assets/global.css" />
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +29,7 @@
       </div>
 
       <div class="img-top">
-        <img src="./assets/img/chip-mockup.svg" alt="Mockup" />
+        <img src="./assets/img/chip-mockup.svg" alt="Mockup" class="img-chip"/>
       </div>
     </section>
 
@@ -88,17 +90,19 @@
       </article>
 
       <section class="acoordion-plans">
-        <h1>Conheça os nossos planos</h1>
+        <h1 class="texto_planos">Conheça os nossos planos</h1>
 
         <div class="option-chip">
-          <div class="option-fisico">
-            <h1 class="text-fisico">Chip Físico</h1>
+          <div class="option-fisico" id="optionfisico">
+            <h1 class="text-fisico" id="textfisico">Chip Físico</h1>
           </div>
 
-          <div class="option-virtual">
-            <h1 class="text-virtual">eSIM</h1>
+          <div class="option-virtual" id="optionvirtual">
+            <h1 class="text-virtual" id="textvirtual">eSIM</h1>
           </div>
         </div>
+
+      <section id="accordion-fisico">
         <!-- PLANO MAX20GB -->
         <div class="accordion">
           <div class="accordion-item">
@@ -174,7 +178,7 @@
         <!-- PLANO MAX20GB -->
 
         <!-- PLANO MEGAPACK -->
-        <div class="accordion">
+        <div class="accordion" >
           <div class="accordion-item">
             <div class="accordion-item-header">
               <h1>PLANO MEGAPACK - USA | Escandinávia</h1>
@@ -237,7 +241,7 @@
         <!-- PLANO MEGAPACK -->
 
         <!-- PLANO ESPECIAL -->
-        <div class="accordion">
+        <div class="accordion" >
           <div class="accordion-item">
             <div class="accordion-item-header">
               <h1>PLANO ESPECIAL - Europa</h1>
@@ -312,7 +316,7 @@
         <!-- PLANO ESPECIAL -->
 
         <!-- PLANO TOP DESTINO -->
-        <div class="accordion">
+        <div class="accordion" >
           <div class="accordion-item">
             <div class="accordion-item-header">
               <h1>
@@ -571,8 +575,447 @@
 
         <!-- PLANO PACIFICO -->
       </section>
+    </section>
+
+
+
+<!-- ACCORDION VIRTUAL -->
+
+    <section id="accordion-virtual">
+      <!-- PLANO MAX20GB -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <h1>PLANO MAX 20GB - USA | Europa</h1>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <div class="accordion-item1">
+                <div class="text-accordion-planomax">
+                  <div class="content-text-planomax">
+                    <h1 class="texto-content-planomax">Cobertura</h1>
+                    <p class="p-info-planomax">
+                      <span>Américas: </span>
+                      Estados Unidos (USA)
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>Europa: </span>
+                      Alemanha, Áustria, Bélgica, Bulgária, Chipre, Croácia,
+                      Dinamarca, Eslováquia, Eslovênia, Espanha, Estônia,
+                      Finlândia, França, Grécia, Gibraltar, Holanda, Hungria,
+                      Islândia, Irlanda, Itália, Letônia, Liechtenstein,
+                      Lituânia, Luxemburgo, Malta, Noruega, Portugal, Polônia,
+                      Reino Unido (Inglaterra, Escócia, País de Gales),
+                      República Checa, Romênia, Rússia, Suécia, Suíça
+                    </p>
+                  </div>
+
+                  <div class="valores-planomax">
+                    <div class="valor-plano">
+                      <h1>Valores</h1>
+                      <p>Incluso valor do Chip + Créditos</p>
+                    </div>
+
+                    <div class="valores-planos">
+                      <h1>20GB - R$411,00</h1>
+                      <p>
+                        Validos por <span>10 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>20GB - R$411,00</h1>
+                      <p>
+                        Validos por <span>20 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>20GB - R$546,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+                    </div>
+
+                    <div class="valor-recargas">
+                      <h1>Valores Recarga</h1>
+                      <p>Feito pelo app mysimtravel FOR YOU</p>
+                      <h2>20GB 10 DIAS - R$340,00</h2>
+                      <h2>20GB 20 DIAS - R$392,00</h2>
+                      <h2>20GB 30 DIAS - R$475,00</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button class="button-comprar">COMPRE AQUI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PLANO MAX20GB -->
+
+      <!-- PLANO MEGAPACK -->
+      <div class="accordion" >
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <h1>PLANO MEGAPACK - USA | Escandinávia</h1>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <div class="accordion-item1">
+                <div class="text-accordion-planomax">
+                  <div class="content-text-planomax">
+                    <h1 class="texto-content-planomax">Cobertura</h1>
+                    <p class="p-info-planomax">
+                      <span>Américas: </span>
+                      Estados Unidos (USA)
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>Europa: </span>
+                      Dinamarca, Estônia, Finlândia, Grécia, Letônia,
+                      Lituânia, Noruega, Suécia, Rússia.
+                    </p>
+                  </div>
+
+                  <div class="valores-planomax">
+                    <div class="valor-plano">
+                      <h1>Valores</h1>
+                      <p>Incluso valor do Chip + Créditos</p>
+                    </div>
+
+                    <div class="valores-planos">
+                      <h1>1GB - R$104,00</h1>
+                      <p>
+                        Validos por <span>14 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>5GB - R$169,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+                    </div>
+
+                    <div class="valor-recargas">
+                      <h1>Valores Recarga</h1>
+                      <p>Feito pelo app mysimtravel FOR YOU</p>
+                      <h2>1GB - R$ 33,00</h2>
+                      <h2>5GB - R$ 169,00</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button class="button-comprar">COMPRE AQUI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLANO MEGAPACK -->
+
+      <!-- PLANO ESPECIAL -->
+      <div class="accordion" >
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <h1>PLANO ESPECIAL - Europa</h1>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <div class="accordion-item1">
+                <div class="text-accordion-planomax">
+                  <div class="content-text-planomax">
+                    <h1 class="texto-content-planomax">Cobertura</h1>
+                    <p class="p-info-planomax">
+                      <span>Américas: </span>
+                      Estados Unidos (USA)
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>Europa: </span>
+                      Alemanha, Áustria, Bélgica, Bulgária, Chipre, Croácia,
+                      Dinamarca, Eslováquia, Eslovênia, Espanha, Estônia,
+                      Finlândia, França, Grécia, Gibraltar, Holanda, Hungria,
+                      Islândia, Irlanda, Itália, Letônia, Liechtenstein,
+                      Lituânia, Luxemburgo, Malta, Noruega, Portugal, Polônia,
+                      Reino Unido (Inglaterra, Escócia, País de Gales),
+                      República Checa, Romênia, Rússia, Suécia, Suíça
+                    </p>
+                  </div>
+
+                  <div class="valores-planomax">
+                    <div class="valor-plano">
+                      <h1>Valores</h1>
+                      <p>Incluso valor do Chip + Créditos</p>
+                    </div>
+
+                    <div class="valores-planos">
+                      <h1>2GB - R$181,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>5GB - R$325,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>10GB - R$545,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+                    </div>
+
+                    <div class="valor-recargas">
+                      <h1>Valores Recarga</h1>
+                      <p>Feito pelo app mysimtravel FOR YOU</p>
+                      <h2>1GB - R$ 58,00</h2>
+                      <h2>2GB - R$ 110,00</h2>
+                      <h2>5GB - R$ 254,00</h2>
+                      <h2>10GB - R$ 474,00</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button class="button-comprar">COMPRE AQUI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PLANO ESPECIAL -->
+
+      <!-- PLANO TOP DESTINO -->
+      <div class="accordion" >
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <h1>
+              PLANO TOP DESTINO - Américas | Europa | Ásia | Oceania | África
+            </h1>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <div class="accordion-item1">
+                <div class="text-accordion-planomax">
+                  <div class="content-text-planomax">
+                    <h1 class="texto-content-planomax">Cobertura</h1>
+                    <p class="p-info-planomax">
+                      <span>Américas: </span>
+                      AMÉRICAS: Brasil, Argentina,Costa Rica,
+                      Colômbia, El Salvador, Equador, Estados Unidos,
+                      Guadalupe, Guatemala, Honduras, México,
+                      Nicarágua,Panamá, Peru, Paraguai, Porto Rico, República
+                      Dominicana, Uruguai
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>Europa: </span>
+                      EUROPA: Alemanha, Albania, Áustria, Belarus, Bélgica,
+                      Bulgária, Chipre, Croácia, Dinamarca, Eslováquia,
+                      Eslovênia, Espanha, Estônia, Finlândia, França, Grécia,
+                      Gibraltar, Holanda, Hungria, Islândia, Ilhas Faroe,
+                      Irlanda, Itália, Letônia, Liechtenstein, Lituânia,
+                      Luxemburgo, Malta, Montenegro, Noruega, Portugal,
+                      Polônia, Reino Unido (Inglaterra, Escócia, País de
+                      Gales), República Checa, Romênia, Suíça, Suécia.
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>ÁSIA/OCEANIA: </span>
+                      Austrália, Azerbaidjão, Cazaquistão, Coreia do
+                      Sul,China,Georgia,Hong Kong, Indonésia,
+                      Israel, Malásia, Qatar, Rússia, Singapura, Tailândia,
+                      Taiwan, Turquia , Ucrânia, Uzbequistão, Vietnam
+                    </p>
+
+                    
+                  </div>
+
+                  <div class="valores-planomax">
+                    <div class="valor-plano">
+                      <h1>Valores</h1>
+                      <p>Incluso valor do Chip + Créditos</p>
+                    </div>
+
+                    <div class="valores-planos">
+                      <h1>1GB - R$188,00</h1>
+                      <p>
+                        Validos por <span>14 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>2GB - R$292,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>3GB - R$389,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>5GB - R$585,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+                    </div>
+
+                    <div class="valor-recargas">
+                      <h1>Valores Recarga</h1>
+                      <p>Feito pelo app mysimtravel FOR YOU</p>
+                      <h2>1GB - R$ 117,00</h2>
+                      <h2>2GB - R$ 221,00</h2>
+                      <h2>3GB - R$ 318,00</h2>
+                      <h2>3GB - R$ 514,00</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button class="button-comprar">COMPRE AQUI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLANO TOP DESTINO -->
+
+      <!-- PLANO GLOBAL -->
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <h1>PLANO GLOBAL</h1>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <div class="accordion-item1">
+                <div class="text-accordion-planomax">
+                  <div class="content-text-planomax">
+                    <h1 class="texto-content-planomax">Cobertura</h1>
+
+                    <p class="p-info-planomax">
+                      <span>AMÉRICAS: </span>
+                      Anguilla, Antigua & Barbuda, Antilhas Holandesas,
+                      Argentina, Aruba, Brasil, Barbados, Belarus, Bermuda,
+                      Canada, Chile, Colômbia, Costa Rica, Dominica, El
+                      Salvador, Equador, Estados Unidos (USA) Grenada,
+                      Guatemala, Haiti, Honduras, Ilhas Virgens Americanas,
+                      Ilhas Virgens Britânicas, Ilhas Caiman, Jamaica, México,
+                      Monteserrat, Nicarágua, Panamá, Paraguai, Peru, Puerto
+                      Rico, Republica Dominicana, St. Kitts, St. Lucia, St.
+                      Vincent & Grenadines, Suriname, Turks & Caicos, Uruguai.
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>EUROPA: </span>
+                      Albânia, Alemanha, Armênia, Áustria, Bélgica, Bulgária,
+                      Croácia, Chipre, República Checa, Dinamarca, Eslováquia,
+                      Eslovênia, Espanha, Estônia, Finlândia, Ilhas Faroe,
+                      França, Georgia, Gibraltar, Grécia, Groelândia, Holanda,
+                      Hungria, Islândia, Irlanda, Itália, Letônia, Lituânia,
+                      Luxemburgo, Kosovo, Malta,Montenegro, Noruega, Polônia,
+                      Portugal, Romênia, Sérvia, Suécia, Suíça, Reino Unido,
+                      Cidade Vaticano, Turquia.
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>ÁSIA: </span>
+                      Arabia Saudita, Azerbaijão, China, Emirados Árabes,
+                      Filipinas, Hong Kong, Indonésia, Índia, Israel, Japão,
+                      Cazaquistão, Coreia do Sul, Kuwait, Macau, Malásia,
+                      Moldova, Qatar, Rússia, Singapura, Sri Lanka, Taiwan,
+                      Tajaquistão, Tailândia, Ucrânia, Uzbequistão, Vietnam
+                    </p>
+
+                    <p class="p-info-planomax">
+                      <span>Africa / Oceania: </span>
+                      África do Sul, Austrália, Congo DR, Egito, Mauricius,
+                      Nova Zelândia
+                    </p>
+                  </div>
+
+                  <div class="valores-planomax">
+                    <div class="valor-plano">
+                      <h1>Valores</h1>
+                      <p>Incluso valor do Chip + Créditos</p>
+                    </div>
+
+                    <div class="valores-planos">
+                      <h1>500MB - R$299,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>1GB - R$429,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+
+                      <h1>2GB - R$650,00</h1>
+                      <p>
+                        Validos por <span>30 dias</span> após ativação ou<br />
+                        quando atingir o limite de franquia
+                      </p>
+                    </div>
+
+                    <div class="valor-recargas">
+                      <h1>Valores Recarga</h1>
+                      <p>Feito pelo app mysimtravel FOR YOU</p>
+                      <h2>500MB - R$ 228,00</h2>
+                      <h2>1GB - R$ 358,00</h2>
+                      <h2>2GB - R$ 579,00</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button class="button-comprar">COMPRE AQUI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLANO PACIFICO -->
+    </section>
+  </section>
+
+
+  <article class="infos_buttom">
+    <h1 class="texto_infos_buttom">
+      Algumas informações importantes sobre o nosso chip
+    </h1>
+
+    <ol class="lista_infos">
+      <li><p>É necessário ativar o seu plano de internet pelo nosso app mysimtravel for you para começar a utilizar a internet</p></li>
+      <li><p>O Chip mysimtravel aceita um único pacote de dados de cada vez.</p></li>
+      <li><p>Pacotes desativados pelo usuário são perdidos e não reembolsados.</p></li>
+      <li><p>Todos os pacotes de dados possuem validade em dias após ativados, vencendo pelo consumo ou pelo prazo, o que ocorrer primeiro.</p></li>
+      <li><p>Pacotes ativados em destinos sem cobertura não serão reembolsados. O usuário deverá desativar e ativar outro pacotes com cobertura no país desejado.</p></li>
+      <li><p>Na primeira compra, estão inclusos nos preços dos pacotes apresentados : 01 Chip mysimtravel (R$ 68) + Créditos para ativar plano de dados escolhido.</p></li>
+      <li><p>O Chip Internacional mysimtravel não perde a validade, se movimentado uma vez por ano.</p></li>
+      <li><p>Os Créditos (em Reais) não utilizados, não perdem a validade, se movimentado uma vez por ano.</p></li>
+      <li><p>Pelo nosso aplicativo mysimtravel FORYOU é possível efetuar recargas, consultar tarifas, ativar e consultar o consumo do pacote ativado.</p></li>
+      <li><p>Você utiliza o mesmo Chip mysimtravel para todos os destinos, o que altera são os Planos de Dados.</p></li>
+    </ol>
+  </article>
     </main>
   </body>
 
-  <script src="./accordion.js"></script>
+  <script src="./pagescript.js"></script>
 </html>

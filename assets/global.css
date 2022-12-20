@@ -159,11 +159,15 @@ main {
   margin-top: 60px;
 }
 
-.option-fisico {width: 800px;}
+.option-fisico {
+  width: 800px;
+  transition: 1s;
+}
 .option-fisico > h1 {
   text-align: center;
   color: #FF5000;
   transition: 1s;
+  cursor: pointer;
 }
 
 .option-fisico{border-bottom: 3px solid #FF5000;}
@@ -174,7 +178,10 @@ main {
 }
 
 
-.option-virtual {width: 800px;}
+.option-virtual {
+  width: 800px;
+  transition: 1s;
+}
 .option-virtual > h1 {
   text-align: center;
   color: #2d2d2f;
@@ -322,4 +329,109 @@ main {
   border: transparent;
   font-family: "Poppins",sans-serif;
   cursor: pointer;
+}
+
+
+
+
+
+
+.texto_planos, .option-chip, .option-virtual {
+  visibility: hidden;
+}
+
+
+.infos_buttom {
+  margin-top: 100px;
+}
+
+.infos_buttom > .texto_infos_buttom {
+  color: #FF5000;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.lista_infos {
+  gap: 50px;
+  margin-top: 30px;
+  
+}
+
+.lista_infos > li {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.lista_infos > li > p {
+  font-weight: 500;
+}
+
+#accordion-virtual {
+  animation: entradaright 1s ease 0s 1 normal forwards;
+}
+
+#accordion-fisico {
+  animation: entradaleft 1s ease 0s 1 normal forwards;
+}
+
+
+@keyframes entradaright {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes entradaleft {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes chipzinho {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+.img-chip {
+  animation: chipzinho 8s ease 0s infinite normal forwards;
 }
