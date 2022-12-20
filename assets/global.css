@@ -47,6 +47,7 @@ main {
 .grid-rows{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 546px;
   margin-top: 30px;
@@ -368,10 +369,12 @@ main {
 
 #accordion-virtual {
   animation: entradaright 1s ease 0s 1 normal forwards;
+  display: none;
 }
 
 #accordion-fisico {
   animation: entradaleft 1s ease 0s 1 normal forwards;
+  display: block;
 }
 
 
@@ -400,38 +403,4 @@ main {
 }
 
 
-@keyframes chipzinho {
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 50%;
-	}
 
-	10% {
-		transform: rotate(8deg);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: rotate(-10deg);
-	}
-
-	30%,
-	50%,
-	70% {
-		transform: rotate(10deg);
-	}
-
-	80% {
-		transform: rotate(-8deg);
-	}
-
-	90% {
-		transform: rotate(8deg);
-	}
-}
-
-.img-chip {
-  animation: chipzinho 10s ease 0s infinite normal forwards;
-}
